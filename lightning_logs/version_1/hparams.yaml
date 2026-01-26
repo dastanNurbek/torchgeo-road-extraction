@@ -1,0 +1,14 @@
+model: unet
+backbone: mobilenet_v2
+in_channels: 3
+task: binary
+num_classes: 1
+num_labels: null
+num_filters: 3
+loss: bce
+class_weights: null
+ignore_index: null
+lr: 0.0001
+patience: 10
+freeze_backbone: false
+freeze_decoder: false
